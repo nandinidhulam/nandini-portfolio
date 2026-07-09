@@ -44,8 +44,8 @@
                 <img src="https://nandinidhulam.github.io/nandini-portfolio/My1.png" alt="Nandini Shrinivas Dhulam">
             </div>
             <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Nandini</span></h1>
-                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                <h1 data-aos="fade-left" data-aos-duration="1000">Hey I'm <span>Nandini</span></h1>
+                <div class="typewriter" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">I'm a <span></span></div>
                 <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Dedicated Web Developer with 1 year of professional experience building dynamic web applications using Core PHP, MySQL, and modern web technologies. Passionate about creating efficient, user-friendly web solutions.</p>
                 <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
                     <a href="https://www.linkedin.com/in/nandini-dhulam-43762a227/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -119,6 +119,10 @@
                 <div class="skill-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="450">
                     <i class="fa-solid fa-plug"></i>
                     <h4>RESTful APIs</h4>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
+                    <i class="fa-brands fa-laravel"></i>
+                    <h4>Laravel</h4>
                 </div>
             </div>
         </div>
@@ -228,7 +232,11 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({ offset: 0 });
+        AOS.init({
+            offset: 0,
+            once: true,
+            startEvent: 'DOMContentLoaded'
+        });
     </script>
     <script>
         function hamburg() {
